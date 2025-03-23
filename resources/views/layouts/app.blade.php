@@ -59,6 +59,11 @@
                         <i class="fas fa-box"></i> Produits
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="{{ route('checklists.index') }}">
+                        <i class="fas fa-clipboard-check"></i> Checklists
+                    </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown">
                         <i class="fas fa-warehouse"></i> Stock

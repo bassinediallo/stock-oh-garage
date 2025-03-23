@@ -1,0 +1,66 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Checklist extends Model
+{
+    protected $fillable = [
+        'date_verification',
+        'ponts_elevateurs',
+        'ponts_elevateurs_remarques',
+        'ecran_tv',
+        'ecran_tv_remarques',
+        'lampes',
+        'lampes_remarques',
+        'extincteur',
+        'extincteur_remarques',
+        'cameras',
+        'cameras_remarques',
+        'telephones',
+        'telephones_remarques',
+        'ordinateurs',
+        'ordinateurs_remarques',
+        'imprimante',
+        'imprimante_remarques',
+        'fontaine_eau',
+        'fontaine_eau_remarques',
+        'cafe_equipements',
+        'cafe_equipements_remarques',
+        'magazines',
+        'magazines_remarques',
+        'odeur_generale',
+        'odeur_generale_remarques',
+        'proprete_generale',
+        'proprete_generale_remarques',
+        'cuve_huile',
+        'cuve_huile_remarques',
+        'niveau_cuves',
+        'niveau_cuves_remarques',
+        'proprete_technique',
+        'proprete_technique_remarques',
+        'pieces_moteurs',
+        'pieces_moteurs_remarques',
+        'proprete_parking',
+        'proprete_parking_remarques',
+        'etat_voitures',
+        'etat_voitures_remarques',
+        'etat_jardin',
+        'etat_jardin_remarques',
+        'agent_securite',
+        'agent_securite_remarques',
+        'facade_vitres',
+        'facade_vitres_remarques',
+        'enseigne',
+        'enseigne_remarques',
+        'signalisation',
+        'signalisation_remarques',
+        'parcours_client',
+        'parcours_client_remarques',
+        'proprete_finale',
+        'securite_finale',
+        'materiel_manquant',
+        'recommandations'
+    ];
+}

@@ -11,6 +11,7 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StockReportController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ChecklistController;
 use App\Models\StockMovement;
 use App\Models\Site;
 use Carbon\Carbon;
@@ -61,6 +62,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/reports/export', [ReportController::class, 'export'])->name('reports.export');
     Route::get('/reports/stock', [StockReportController::class, 'index'])->name('reports.stock');
     Route::get('/reports/stock/export', [StockReportController::class, 'export'])->name('reports.stock.export');
+
+    // Checklists
+    Route::resource('checklists', ChecklistController::class);
 
     // Profile
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
